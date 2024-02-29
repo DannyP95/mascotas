@@ -1,0 +1,83 @@
+/* <---------- FOOTER ----------> */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    /* FUENTE */
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    /* font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+.footer-redes{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-redes h2{
+    font-size: 2rem;
+}
+
+.footer-redes h4{
+    font-size: 25px;
+}
+
+.contenedor-redes{
+    padding: 20px 0px;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0px;
+}
+
+.footer-redes i{
+    font-size: 3rem;
+    margin-right: 10px;    
+    padding: 0px 4px;
+    border-radius: 6px;
+}
+
+.footer-redes p{
+    width: 48px;
+}
+
+.redes{
+    font-size: 1rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#whatsapp{
+    color: white;
+    background-color: green;
+}
+
+#instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+#facebook{
+    color: blue;
+    background-color:  white;
+}
+
+/* <---------- COPYRIGHT ----------> */
+
+.footer-copyright{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+
