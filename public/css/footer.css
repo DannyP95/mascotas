@@ -1,8 +1,8 @@
 /* <---------- FOOTER ----------> */
 footer{
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: darkorange;
+    color: black;
     display: flex;
     flex-direction: column;
 
@@ -64,6 +64,7 @@ footer{
 }
 
 #instagram{
+    color: white;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
@@ -79,5 +80,36 @@ footer{
     padding-bottom: 5px;
 }
 
+
+
+/* <-------------------- RESPONSIVE --------------------> */
+
+/* ----- TABLET ----- */
+
+@media (min-width: 765px) {
+    .contenedor-redes{
+        display: flex;  
+        justify-content: center; 
+        padding: 0;    
+    }
+
+    .redes-sociales{
+        margin: 0 5%;
+        flex-direction: column;
+    }
+
+    .footer-redes i {
+        width: 100%;
+        cursor: pointer; 
+}
+
+}
+
+/* ----- LAPTOP ----- */
+
+
+@media (min-width: 1020px) {
+
+}
 
 
