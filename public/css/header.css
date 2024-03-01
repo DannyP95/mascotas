@@ -1,5 +1,4 @@
 header{
-
     width: 100%;
     /* FUENTE */
     font-family: "Patrick Hand", cursive;
@@ -28,7 +27,8 @@ nav{
     width: 60%;
     padding: 0% 20%;
     position: relative;
-    margin-top: -35px;
+    margin-top: -35px;   
+    /* border-bottom: 4px ridge darkorange; */
 }
 
 .menu-header{
@@ -36,33 +36,68 @@ nav{
     width: 80%;
 }
 
-#menuBurguer{
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 5px;
+/* #menuHeader{
+    transition-property: display;
+    transition-duration: 2s;  */
+/* } */
+
+#menuBurguer{    
+    color: darkorange;
+    background-color: black;
+    border: 1px solid darkorange;
+    border-radius: 7px;
+    padding: 8px;
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.menu-header button, .menu-header li{
+    cursor: pointer;
+}
+
+.menu-header button{
+    border: none;
 }
 
 .menu-header ul{
-    border: 2px solid black;
+    display: none;   
+    height: auto;
+    position: absolute;
+    margin-top: 10px;
+    left: 5%;
+    right: 5%;
+    border: 2px solid darkorange;
     padding: 2% 4%;
-    border-radius: 5px;
-    display: flex;
+    border-radius: 15px;
     flex-direction: column;
     align-items: start;
     font-size: 22px;
+    background-color: black;
 }
 
 .menu-header li{
     list-style: none;
-    padding: 5px 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: start;
+    border: 1px solid;
+}
+
+.menu-header li:hover{
+    background-color: black;
+    border-color: darkorange;
 }
 
 .menu-header li i{
     text-align: center;
     margin-right: 5px;
     width: 50px;
+}
+
+.menu-header li a{
+    text-decoration: none;
+    color: darkorange;
 }
 
 .icons-header{
@@ -83,9 +118,11 @@ nav{
     
     .nav-header {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: end;
         margin-top: -8%;
+        padding-bottom: 1%;
+        border-bottom: 4px ridge darkorange;
     }
 
     .logo-header{
@@ -111,24 +148,60 @@ nav{
     }
 
     .menu-header ul {
+        display: flex;
         border: none;
         flex-direction: row;        
         justify-content: space-evenly;
         padding: 0;
+        background: none;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    
+    .menu-header li {
+        list-style: none;
+        padding: 0;
+        background-color: black;
+        margin: 0 5px;
+        font-size: 1rem;
+        border: none;
+    }
+    
+    .menu-header li i {
+        width: auto;
     }
 
     .menu-header ul li a{
         display: flex;
         align-items: center;
+        border: 3px solid darkorange;
+        padding: 6px;
+        border-radius: 10px;
     }
 
-    .menu-header li {
-        list-style: none;
-        padding: 0;
+    .menu-header ul li a:hover{
+        background-color: darkorange;
+        color: black;
+        border-color: black;
     }
 
-    .menu-header li i {
-        width: auto;
+
+
+}
+
+
+/* ----- LAPTOP ----- */
+
+
+@media (min-width: 1020px) {
+
+    .menu-header ul{
+        margin-bottom: 2%;
+    }
+
+    .menu-header ul li{
+        font-size: 1.5rem;
     }
 
 }
